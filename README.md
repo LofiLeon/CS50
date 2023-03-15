@@ -1,2 +1,2 @@
 # CS50
-My solutions for the CS50 course.
+My code for the CS50 course, which i started in March 2023.
