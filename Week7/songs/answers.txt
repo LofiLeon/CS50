@@ -1,0 +1,23 @@
++-------------+
+| AVG(energy) |
++-------------+
+| 0.65906     |
++-------------+
+
++--------------+
+| AVG(valence) |
++--------------+
+| 0.484443     |
++--------------+
+
++-------------------+
+| AVG(danceability) |
++-------------------+
+| 0.71646           |
++-------------------+
+
+-> Lower quality dance music with good energy
+
+--
+
+All songs are different. Just taking an average of theese three values does not make a lot of sense since different genres have diferent characterisitcs. By mixing them up you might end up with a mix that the person does not like.
