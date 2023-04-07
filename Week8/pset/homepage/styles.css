@@ -1,0 +1,22 @@
+.centered {
+    text-align: center;
+}
+
+.large {
+    font-size: large;
+}
+
+.pictureFrame {
+    width: 500px;
+}
+
+.autoWidth {
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+.vfbText {
+    font-size: large;
+    color: red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // TODO: Question 1
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#id1').innerHTML = 'Correct!';
+                });
+
+                let wrongs = document.querySelectorAll('.wrong');
+                for (let i = 0; i<wrongs.length; i++) {
+                    wrongs[i].addEventListener('click', function() {
+                        wrongs[i].style.backgroundColor = 'red';
+                        document.querySelector('#id1').innerHTML = 'Incorrect!';
+                    });
+                }
+
+                // TODO: Question 2
+                document.querySelector('#checkAnswer').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value == 'Guirassy') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector("id2").innerHTML = 'Correct';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector("id2").innerHTML = 'Correct';
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Who will win the DFB Pokal 2023?</h3>
+                <button class="wrong">Freiburg</button>
+                <button class="correct">Stuttgart</button>
+                <button class="wrong"">Frankfurt</button>
+                <p id="id1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Who will score the winning goal?</h3>
+                <form>
+                    <input autocomplete="off"  placeholder="Player" type="text">
+                    <button id="checkAnswer" type="Submit">Submit</button>
+                    <p id="id2"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
